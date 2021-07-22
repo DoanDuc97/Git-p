@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /* xây dụng class Date với 3 tham số */
+    let myDate = function (day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year - year;
+    }
+    /* xây dựng phương thức trả về ngày, tháng, năm */
+    this.getDay = function () {
+        return this.day;
+    }
+    this.getMonth = function () {
+        return this.month;
+    }
+    this.getYear = function () {
+        return this.year;
+    }
+   /* xây dựng phương thức đặt lại giá trị các thuộc tính */
+    this.setDay = function (day) {
+        this.day = day;
+    }
+    this.setMonth = function (month) {
+        this.month = month;
+    }
+    this.setYear = function (year) {
+        this.year = year;
+    }
+    /* sử dụng lớp vừa tạo. Tạo đối tượng date 17, month 11, year 1997*/
+    let date = new myDate(17, 11, 1997);
+    let  day = date.getDay(); // 17
+    let month = date.getMonth(); // 11
+    let year = date.getYear(); // 1997
+    alert(day + "/" + month + "/" + year);
+
+
+</script>
+
+</body>
+</html>
