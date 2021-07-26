@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Do you love me</title>
+  <style>
+    button{
+      position:absolute;
+      left: 100px;
+      top: 100px;
+      height: 50px;
+      width: 50px;
+    }
+  </style>
+</head>
+<h2>Do you love me</h2>
+<button type="button" onclick="pressYes()">Yes</button>
+<br>
+<button id="press" onmouseover="pressNo()" type="button">No</button>
+</body>
+</html>
+
+<script>
+  function pressNo(){
+    let x_new = Math.round(Math.random() * 200) + 200;
+    let y_new = Math.round(Math.random() * 200) + 200;
+    let no_button = document.getElementById("press");
+    no_button.style.left = x_new + 'px';
+    no_button.style.top = y_new + 'px';
+  }
+
+  function pressYes(){
+    alert("Yes, i do")
+  }
+</script>

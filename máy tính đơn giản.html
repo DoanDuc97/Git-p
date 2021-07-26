@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <style>
+        table{
+            border: 1px solid black;
+            width: 200px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+        }
+        button{
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            float: left;
+        }
+        input{
+            height: 30px;
+            text-align: right;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="result"></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="one()">1</button></td>
+            <td><button type="button" onclick="two()">2</button></td>
+            <td><button type="button" onclick="three()">3</button></td>
+            <td><button type="button" onclick="add()">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="four()">4</button></td>
+            <td><button type="button" onclick="five()">5</button></td>
+            <td><button type="button" onclick="six()">6</button></td>
+            <td><button type="button" onclick="sub()">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="seven()">7</button></td>
+            <td><button type="button" onclick="eight()">8</button></td>
+            <td><button type="button" onclick="nine()">9</button></td>
+            <td><button type="button" onclick="mul()">x</button></td>
+        </tr>
+        <tr>
+            <td><button type="reset">C</button></td>
+            <td><button type="button" onclick="zero()">0</button></td>
+            <td><button type="button" onclick="equal()">=</button></td>
+            <td><button type="button" onclick="divide()">/</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+
+<script>
+    function one(){
+        document.getElementById("result").value += 1;
+    }
+    function two(){
+        document.getElementById("result").value += 2;
+    }
+    function three(){
+        document.getElementById("result").value += 3;
+    }
+    function add(){
+        document.getElementById("result").value += '+';
+    }
+    function four(){
+        document.getElementById("result").value += 4;
+    }
+    function five(){
+        document.getElementById("result").value += 5;
+    }
+    function six(){
+        document.getElementById("result").value += 6;
+    }
+    function sub(){
+        document.getElementById("result").value += '-';
+    }
+    function seven(){
+        document.getElementById("result").value += 7;
+    }
+    function eight(){
+        document.getElementById("result").value += 8;
+    }
+    function nine(){
+        document.getElementById("result").value += 9;
+    }
+    function mul(){
+        document.getElementById("result").value += '*';
+    }
+    function zero(){
+        document.getElementById("result").value += '*';
+    }
+    function divide(){
+        document.getElementById("result").value += '/';
+    }
+    function equal(){
+        document.getElementById("result").value = eval(document.getElementById("result").value);
+    }
+</script>

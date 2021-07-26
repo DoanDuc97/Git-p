@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let initial = +prompt("Nhập số tiền vay");
+  let interest = +prompt("Nhập lãi suất");
+  let month = +prompt("Nhập số thời gian vay (tháng)")
+  interestForMonth = initial * interest / month;
+  for(i = 0; i <= month; i++){
+    interestForMonth = initial * interest / i;
+    console.log(interestForMonth);
+  }
+  alert("Lãi ngân hàng là: " + interestForMonth + " VND")
+</script>
+
+</body>
+</html>
