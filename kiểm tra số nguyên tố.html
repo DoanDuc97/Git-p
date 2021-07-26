@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function SNT(num) {
+        let flag = true;
+        if (num < 2) {
+            flag = false;
+        } else {
+            for (let i = 1; 1 < 10000; i++) {
+                if (num % i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+
+        }
+        if (flag == true) {
+            document.write(num + "là số nguyên tố <br/>");
+        } else {
+            document.write(num + "không phải số nguyên tố <br/>");
+        }
+    }
+</script>
+
 </body>
 </html>
