@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(num) {
+        let a = 1;
+        let b = 0;
+        let c;
+        let check = true;
+        for (let i = 0; i < num; i++) {
+            c = a;
+            a = a + b;
+            b = c;
+            if (a === num) {
+                return true
+            }
+        }
+        return false
+    }
+
+    let num = +prompt("Nhập vào số bất kỳ");
+    alert(isFibonacci(num));
+</script>
+
+
+</body>
+</html>

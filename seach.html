@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let hoaQua = ["Táo", "Cam", "Dừa", "Chuối", "Dứa", "Chanh"];
+    let fruits = ["Apple", "Orange", "Coconut", "Banana", "Pineapple", "Lemon"];
+    let inputInfo = prompt("Search information");
+    let count = 0;
+    for (i = 0; i < hoaQua.length; i++) {
+        if (inputInfo === hoaQua[i]) {
+            console.log(hoaQua [i] + " dịch sang tiếng anh là: " + fruits  [i]);
+            break
+        }
+        count++;
+    }
+    if(count === hoaQua.length) {
+        console.log("Không tìm thấy dữ liệu")
+    };
+
+</script>
 </body>
 </html>
